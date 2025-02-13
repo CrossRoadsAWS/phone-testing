@@ -1,0 +1,13 @@
+version: 1
+frontend:
+  phases:
+    build:
+      commands:
+        - "cd my_amplify_app"
+        - npm run build
+  artifacts:
+    baseDirectory: /my_amplify_app
+    files:
+      - "**/*"
+  cache:
+    paths: []
